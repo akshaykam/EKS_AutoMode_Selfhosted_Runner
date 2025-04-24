@@ -162,7 +162,3 @@ If you encounter issues with resources not being properly deleted during `terraf
 ./scripts/cleanup-finalizers.sh arc-systems
 ./scripts/cleanup-finalizers.sh arc-runners
 ```
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
