@@ -7,6 +7,7 @@ resource "kubernetes_secret" "github_app_credentials" {
   data = {
     github_app_id              = trimspace(file("${path.module}/secrets/github_app_id.txt"))
     github_app_installation_id = trimspace(file("${path.module}/secrets/github_app_installation_id.txt"))
-    github_app_private_key     = trimspace(file("${path.module}/secrets/pem_files/eks-auto-self-hosted-runner.2025-04-02.private-key.pem"))
+    github_app_private_key     = trimspace(file("${path.module}/secrets/pem_files/arc-runner-controller651.2025-04-24.private-key.pem")) 
+   # Added the pem file name generated from github app 
   }
 }
