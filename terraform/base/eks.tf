@@ -11,6 +11,6 @@ module "eks" {
   node_pools = ["system"]
 
   enable_cluster_creator_admin_permissions = true
-
+   # No managed node groups required — Auto Mode will handle nodes
   tags = local.tags
 }

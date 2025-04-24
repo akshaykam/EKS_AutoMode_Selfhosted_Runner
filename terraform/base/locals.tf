@@ -1,6 +1,6 @@
 locals {
   region       = "us-east-1"
-  profile_name = "aws-test-admin"
+  profile_name = "akshaykam" # changed to my profile name
 }
 
 locals {
