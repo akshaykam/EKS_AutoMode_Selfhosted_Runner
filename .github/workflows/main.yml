@@ -1,0 +1,8 @@
+name: CI
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: ["self-hosted", "arc-runner-set"]
+    steps:
+      - uses: actions/checkout@v3
+      - run: echo "Hello from EKS Auto runner!"
